@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "id": "2",
+      "name": "Project B",
+      "details": "Research project on renewable energy sources.",
+      "completed": true
+    },
+    {
+      "id": "3",
+      "name": "Project C",
+      "details": "Designing a marketing campaign for a new product launch.",
+      "completed": false
+    },
+    {
+      "id": "4",
+      "name": "Project D",
+      "details": "Improving customer service processes.",
+      "completed": true
+    },
+    {
+      "id": "5",
+      "name": "Project E",
+      "details": "Implementing a new CRM system.",
+      "completed": false
+    }
+  ]
+}
