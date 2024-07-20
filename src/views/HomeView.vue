@@ -36,23 +36,34 @@
 import { errorMessages } from 'vue/compiler-sfc';
 import axios from 'axios'
 export default {
-  data() {
+ data() {
     return {
-      projects: [],
+      projects: [] 
     };
   },
-
   mounted() {
-    fetch("http://localhost:3000/projects")
-      .then((res) => res.json())
-      .then((data) => (this.projects = data))
-      .catch((err) => console.log(err.message));
+    this.fetchProjects(); 
   },
-  methods:{
-    deleteProject(id){
-      fetch(`http://localhost:3000/projects/${id}`,{method:'DELETE'}).catch(err=>console.log(err.messages))
-     //axios.delete(`http://localhost:3000/projects/${id}`)
-
+  methods: {
+    fetchProjects() {
+      fetch("http://localhost:3000/projects")
+        .then(res => res.json())
+        .then(data => (this.projects = data))
+        .catch(err => console.log(err.message));
+    },
+    deleteProject(id) {
+      fetch(`http://localhost:3000/projects/${id}`, { method: 'DELETE' })
+        .then(response => {
+          if (response.ok) {
+            
+            this.fetchProjects(); له
+          } else {
+            console.error('حدث خطأ أثناء حذف المشروع');
+          }
+        })
+        .catch(error => {
+          console.error('حدث خطأ أثناء حذف المشروع', error);
+        });
     }
   }
 };
