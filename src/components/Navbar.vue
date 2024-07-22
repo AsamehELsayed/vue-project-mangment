@@ -3,12 +3,12 @@
   <div class="max-w-7xl mx-auto">
     <div class="flex justify-between items-center">
       <!-- Navbar brand/logo -->
-      <div class="text-2xl font-bold text-white">project manger</div>
+      <RouterLink to="/" class="text-2xl font-bold text-white">project manger</RouterLink>
 
       <!-- Navbar links -->
       <div class="space-x-2">
-        <a href="#" class="text-white hover:text-gray-800">Home</a>
-        <a href="#" class="text-white hover:text-gray-800">Add</a>
+        <RouterLink to="/" class="text-white hover:text-gray-800">Home</RouterLink>
+        <RouterLink :to="{name:'create'}" class="text-white hover:text-gray-800">Add</RouterLink>
       
       </div>
     </div>

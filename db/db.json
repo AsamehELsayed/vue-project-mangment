@@ -1,3 +1,28 @@
 {
-  "projects": []
+  "projects": [
+    {
+      "name": "csd",
+      "details": "sasasada",
+      "id": "2",
+      "completed": true
+    },
+    {
+      "id": "4",
+      "name": "Project D",
+      "details": "Improving customer service processes.",
+      "completed": false
+    },
+    {
+      "id": "5",
+      "name": "Project E",
+      "details": "Implementing a new CRM system.",
+      "completed": true
+    },
+    {
+      "id": 0,
+      "completed": false,
+      "name": "kkk",
+      "details": "hhhhhhhhhhhk"
+    }
+  ]
 }

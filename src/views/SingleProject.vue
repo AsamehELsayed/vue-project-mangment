@@ -10,7 +10,7 @@
       </div>
       <div>
         <label class="inline-flex items-center">
-          <div v-if="project.compeleted">
+          <div v-if="project.completed">
           <span class="ml-2 text-gray-700">Done</span>
           </div>
           <div v-else>
